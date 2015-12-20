@@ -7,3 +7,9 @@ end
 def adder( addend = 1 )
 	yield + addend
 end
+
+def repeater( quantity = 1 )
+	quantity.times do
+		yield
+	end
+end
